@@ -1,4 +1,5 @@
-var webpack = require('webpack')
+var webpack = require('webpack');
+var path = require('path');
 
 module.exports = {
   devtool: 'source-map',
@@ -6,9 +7,9 @@ module.exports = {
   entry: './index.js',
 
   output: {
-    path: '/',
-    filename: 'bundle.js',
-    publicPath: '/'
+    path: path.join(__dirname, '/public/bundle'),
+    filename: 'bundle/bundle.js',
+    publicPath: '/public'
   },
 
   plugins: process.env.NODE_ENV === 'production' ? [

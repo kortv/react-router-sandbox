@@ -10,6 +10,7 @@ export default React.createClass({
           <li><NavLink to="/" onlyActiveOnIndex>Home</NavLink></li>
           <li><a href="/about">About</a></li>
           <li><NavLink to="/repos">Repos</NavLink></li>
+          <li><NavLink to="/repos/nepo">RepoNepo</NavLink></li>
         </ul>
         {this.props.children}
       </div>

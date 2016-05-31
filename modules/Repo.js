@@ -1,12 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-export default React.createClass({
-  render() {
-    const { userName, repoName } = this.props.params
-    return (
-      <div>
-        <h2>{userName} / {repoName}</h2>
+export default function RepoNepo({ params }) {
+  return (
+    <div>
+      <div className='repo'>
+        <h2>{params.userName} / {params.repoName}</h2>
       </div>
-    )
-  }
-})
+    </div>
+  );
+}
